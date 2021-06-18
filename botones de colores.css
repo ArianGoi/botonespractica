@@ -1,12 +1,13 @@
 
 .fondo {
     background: rgb(252, 252, 252);
-    width: 20cm;
-    height: 30cm;
-    box-sizing: content-box;
-}
+    width: 1024px;
+    height: 1024px;
+   }
 .boton1 {
     background: red;
+    width: 1024px;
+    height: 1024px;
 }
 
 .boton2 {
