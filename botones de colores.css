@@ -1,0 +1,22 @@
+
+.fondo {
+    background: rgb(252, 252, 252);
+    width: 20cm;
+    height: 30cm;
+    box-sizing: content-box;
+}
+.boton1 {
+    background: red;
+}
+
+.boton2 {
+    background: blue;
+}
+
+.boton3 {
+    box-shadow: rgb(173, 173, 0);
+    width: 20px;
+    height: 30px;
+    background: yellow;
+
+}

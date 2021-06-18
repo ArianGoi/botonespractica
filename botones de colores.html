@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>botones de colores</title>
+    <link rel="stylesheet" href="botones de colores.css">
+</head>
+<body>
+    <div class=fondo>
+        <h1> botones coloridos </h1>
+    <h1>apreta los botones para cambiar el color de fondo</h1>
+    
+    
+    
+
+        <p>
+        <button class="boton" id="boton1">Rojo</button>
+        &nbsp;
+        <button class="boton" id="boton2">azul</button>
+        &nbsp;
+        <button class="boton" id="boton3">amarillo</button>
+        &nbsp;
+        <button class="boton" id="reset">Reset</button>
+        </p>
+    <script>
+        // CSS
+        var fondo = document.getElementsByClassName('fondo')[0];
+        var boton1 = document.getElementById('boton1');
+        var boton2 = document.getElementById('boton2');
+        var boton3 = document.getElementById('boton3');
+        var reset = document.getElementById('reset');
+        
+        boton1.addEventListener('click', function() {
+            fondo.classList.remove('boton2');
+            fondo.classList.remove('boton3');
+            fondo.classList.add('boton1');
+        });
+
+        boton2.addEventListener('click', function () {
+            fondo.classList.remove('boton1');
+            fondo.classList.remove('boton3');
+            fondo.classList.add('boton2');
+        });
+        
+        boton3.addEventListener('click', function () {
+            fondo.classList.remove('boton2');
+            fondo.classList.remove('boton1');
+            fondo.classList.add('boton3');
+        });
+
+
+        reset.addEventListener('click', function () {
+            fondo.classList.remove('boton1', 'boton2','boton3');
+        });
+    </script>
+</div>
+
+</body>
+</html>
